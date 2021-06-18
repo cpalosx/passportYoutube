@@ -51,7 +51,8 @@ app.use((req, res, next)=>{
 app.use("/", require("./routes/index"));
 app.use("/users", require("./routes/users"));
 
+const PORT = 3000;
 
-app.listen(5000, ()=>{
+app.listen(PORT, ()=>{
     console.log("server started..");
 })
